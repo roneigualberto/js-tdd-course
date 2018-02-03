@@ -29,8 +29,12 @@ describe('Main', function () {
 
     });
 
-    it('test 1', function(){
-        
+    it('should have a size of 2 when pop a value from the array', function(){
+        var arr = [1,2,3];
+
+        arr.push();
+
+        console.log(arr.length);
     });
 
 
