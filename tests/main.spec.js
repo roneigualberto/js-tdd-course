@@ -1,31 +1,34 @@
-describe('Main', function(){
+describe('Main', function () {
 
-    describe('Method A', function(){
+    // Roda Uma vez, antes do bloco
+    before(function () {
+        console.log('before');
+    });
 
-        context('Case I', function(){
+    // Roda Uma vez, depois do bloco
+    after(function () {
+        console.log('after');
+    });
 
-            it.skip('should happen blabla', function(){
+    // Roda todas as vezes, antes de cada bloco
+    beforeEach(function () {
+        console.log('beforeEach');
+    });
+    // Roda todas as vezes, depois de cada bloco
+    afterEach(function(){
+        console.log('afterEach');
+    });
 
-                throw new Error('Just an error');
-
-            });
-        });
-
-        context.only('Case II', function(){
-
-            it('should happen blabla', function(){
-                throw new Error('Just an error');
-            });
-
-            it('should happen mimimi', function(){
-
-            });
-        });
+    it('test 1', function(){
 
     });
 
-
-    describe('Method B', function(){
-
+    it('test 1', function(){
+        
     });
+
+
+
+
+
 });
