@@ -1,9 +1,6 @@
 const expect = require('chai').expect;
 
-
 describe('Main', function () {
-
-
     let arr;
 
     // Roda Uma vez, antes do bloco
