@@ -5,6 +5,8 @@ root = true
 
 # Unix-style newlines with a newline ending every file
 [*]
+indent_style = space
+indent_size = 2
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
@@ -27,9 +29,9 @@ indent_style = tab
 # Indentation override for all JS under lib directory
 [lib/**.js]
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 # Matches the exact files either package.json or .travis.yml
 [{package.json,.travis.yml}]
 indent_style = space
-indent_size = 2
+indent_size = 4
